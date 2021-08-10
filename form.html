@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>
+            Entering data in forms
+        </title>
+    </head>
+    <body>
+        <h1>
+            Entering Data in forms
+        </h1>
+        <form method="get" action="phpform.php">
+            <!--Text Box-->
+            What's your name?<br>
+            <input type="text" name="data"><br>
+            <!--Text area-->
+            Enter the pizza toppings you want:<br>
+            <textarea name="data_area" id="text" cols="50" rows="5">
+1.
+2.
+3.
+4.
+            </textarea><br>
+            <!--CheckBoxes-->
+            Do you want fries with that?<br>
+            <input type="checkbox" name="check1" value="yes">Yes<br>
+            <input type="checkbox" name="check2" value="no">No<br>
+            <!--Radio Buttons-->
+            Do you want cold-drinks with that?<br>
+            <input name="radios" type="radio" value="yes">Yes<br>
+            <input name="radios" type="radio" value="no">No<br><br>
+            <!--List Boxes-->
+            What ice cream flavours do you want?<br>
+            <select name="ice_cream[]" multiple>
+                <option value="vanilla">Vanilla</option>
+                <option value="chocolate">Chocolate</option>
+                <option value="herring">Herring</option>
+                <option value="strawberry">Strawberry</option>
+            </select><br><br>
+            <!--Password Box-->
+            Enter your password:<br>
+            <input name="password" type="password"><br><br>
+            <!--Hidden Controls-->
+            <input name="customer_type" type="hidden" value="good">
+            <!--Image Maps-->
+            Click the image:<br>
+            <input name="imap" type="image" src="img.jpg"><br><br>
+            <!--Submit Button-->
+            <input type="submit" value="send"><br>
+        </form>
+    </body>
+</html>

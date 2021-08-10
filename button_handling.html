@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>
+            Handling Buttons
+        </title>
+        <script language="Javascript">
+            function setbutton1()
+            {
+                document.form1.button.value = "button 1";
+                form1.submit();
+            }
+            function setbutton2()
+            {
+                document.form1.button.value = "button 2";
+                form1.submit();
+            }
+            function setbutton3()
+            {
+                document.form1.button.value = "button 3";
+                form1.submit();
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Handling Buttons</h1>
+        <form action="button_handling.php" name="form1" method="post">
+            <input type="hidden" name="button">
+            <input type="button" value="Button 1" onclick="setbutton1()">
+            <input type="button" value="Button 2" onclick="setbutton2()">
+            <input type="button" value="Button 3" onclick="setbutton3()">
+        </form>
+    </body>
+</html>
